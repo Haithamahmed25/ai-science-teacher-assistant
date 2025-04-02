@@ -1,10 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Tab } from '@/components/tabs/Tab';
-import { TabContent } from '@/components/tabs/TabContent';
 import { ArabicToggle, ArabicContent } from '@/components/arabic/ArabicToggle';
-import { generateContent } from '@/lib/api/openai';
 import { DownloadButton } from '@/components/DownloadButton';
 
 export default function ResultsPage() {
