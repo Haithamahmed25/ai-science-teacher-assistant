@@ -28,7 +28,7 @@ export default function HomePage() {
           >
             <div className="flex items-center mb-4">
               <div className="text-4xl mr-4">🔭</div>
-              <h2 className="text-xl font-bold">Newton's Laws of Motion</h2>
+              <h2 className="text-xl font-bold">Newton&apos;s Laws of Motion</h2>
             </div>
             <p className="mb-4">
               Explore the fundamental principles that govern motion in our physical world. Perfect for physics classes in grades 8-12.
