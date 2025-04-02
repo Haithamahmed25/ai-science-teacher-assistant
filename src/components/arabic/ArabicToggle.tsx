@@ -1,13 +1,13 @@
 'use client';
 
-import { useState } from 'react';
+import { FC, ReactNode } from 'react';
 
 interface ArabicToggleProps {
   showArabic: boolean;
   toggleArabic: () => void;
 }
 
-export const ArabicToggle: React.FC<ArabicToggleProps> = ({ showArabic, toggleArabic }) => {
+export const ArabicToggle: FC<ArabicToggleProps> = ({ showArabic, toggleArabic }) => {
   return (
     <div className="mt-8 pt-4 border-t border-gray-200 dark:border-gray-700">
       <button
@@ -22,12 +22,12 @@ export const ArabicToggle: React.FC<ArabicToggleProps> = ({ showArabic, toggleAr
 
 interface ArabicContentProps {
   show: boolean;
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
-export const ArabicContent: React.FC<ArabicContentProps> = ({ show, children }) => {
+export const ArabicContent: FC<ArabicContentProps> = ({ show, children }) => {
   if (!show) return null;
-  
+
   return (
     <div className="mt-4 text-right" dir="rtl">
       {children}
